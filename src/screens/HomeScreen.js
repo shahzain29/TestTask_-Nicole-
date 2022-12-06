@@ -82,14 +82,14 @@ const HomeScreen = () => {
               onChangeText={(text) => setName(text)}
               value={name}
             />
-            <Text style={[styles.validText, { color: isValidName ? 'green' : 'red' }]}>`${isValidName ? 'Valid' : 'Invalid'} Name`</Text>
+            <Text style={[styles.validText, { color: isValidName ? 'green' : 'red' }]}>{`${isValidName ? 'Valid' : 'Invalid'} Name`}</Text>
             <CustomTextInput
               placeholder={'Email'}
               placeholderColor={'black'}
               onChangeText={(text) => setEmail(text)}
               value={email}
             />
-            <Text style={[styles.validText, { color: isValidEmail ? 'green' : 'red' }]}>`${isValidEmail ? 'Valid' : 'Invalid'} Email`</Text>
+            <Text style={[styles.validText, { color: isValidEmail ? 'green' : 'red' }]}>{`${isValidEmail ? 'Valid' : 'Invalid'} Email`}</Text>
 
             <View>
               <CustomTextInput
@@ -104,7 +104,7 @@ const HomeScreen = () => {
                 value={password}
               />
             </View>
-            <Text style={[styles.validText, { color: isValidEmail ? 'green' : 'red' }]}>`${isValidEmail ? 'Valid' : 'Invalid'}Password`</Text>
+            <Text style={[styles.validText, { color: isValidEmail ? 'green' : 'red' }]}>{`${isValidEmail ? 'Valid' : 'Invalid'}Password`}</Text>
             <CustomButton
               title={'Submit'}
               onPress={() => inputcheck()}
